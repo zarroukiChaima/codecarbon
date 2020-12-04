@@ -1,0 +1,58 @@
+<section class="page-section bg-light">
+  <div class="text-center">
+    <h2 class="section-heading text-uppercase">l'IMPACT DE VOTRE CHOIX</h2>
+    <div style="margin:50px" *ngIf="nb1">
+      <h6>{{quiz[0].text}}</h6>
+    </div>
+    <div class="row text-center" *ngIf="nb1">
+      <div class="col-md-3" style="border: 1px solid #033f0d93 ;background-color: #033f0d93;
+         height: 100px; padding: 30px 0px; " *ngFor="let x of quiz[0].reponses" (click)="scoreCalcul(x)">
+        <label tyle="color: #ffffffc9 ;">{{x.text}}</label></div>
+    </div>
+
+    <div style="margin:50px" *ngIf="nb2">
+      <h6>{{quiz[1].text}}</h6>
+    </div>
+    <div class="row text-center" *ngIf="nb2">
+      <div class="col-md-3" style="border: 1px solid #07701e93 ;background-color: #07701e93;
+         height: 100px; padding: 30px 0px; " *ngFor="let x of quiz[1].reponses" (click)="scoreCalcul(x)">
+        <label style="color: #ffffffc9 ;">{{x.text}}</label></div>
+    </div>
+
+    <div style="margin:50px" *ngIf="nb3">
+      <h6>{{quiz[2].text}}</h6>
+    </div>
+    <div class="row text-center" *ngIf="nb3">
+      <div class="col-md-3" style="border: 1px solid #06cdff93 ;background-color: #06cdff93;
+         height: 100px; padding: 30px 0px; " *ngFor="let x of quiz[2].reponses" (click)="scoreCalcul(x)">
+        <label style="color: #ffffffc9 ;">{{x.text}}</label></div>
+    </div>
+
+    <div style="margin:50px" *ngIf="nb4">
+      <h6>{{quiz[3].text}}</h6>
+    </div>
+    <div class="row text-center" *ngIf="nb4">
+      <div class="col-md-3" style="border: 1px solid #0449af93 ;background-color: #0449af93;
+         height: 100px; padding: 30px 0px; " *ngFor="let x of quiz[3].reponses" (click)="scoreCalcul(x)">
+        <label style="color: #ffffffc9 ;">{{x.text}}</label></div>
+    </div>
+
+    <div style="margin:50px" *ngIf="nb5">
+      <h6>{{quiz[4].text}}</h6>
+    </div>
+    <div class="row text-center" *ngIf="nb5">
+      <div class="col-md-3" style="border: 1px solid #00f300c9 ;background-color: #00f300c9;
+         height: 100px; padding: 30px 0px; " *ngFor="let x of quiz[4].reponses" (click)="scoreCalcul(x)">
+        <label style="color: #ffffffc9 ;">{{x.text}}</label></div>
+    </div>
+
+
+    <div style="height: 5px;border:1px solid rgb(21, 255, 0);margin: 40px;
+     background-color: rgb(13, 255, 45);">
+    </div>
+    <div>
+      <label style="font-size: 40px;color: rgba(7, 155, 7, 0.76);">Score : {{score}}</label>
+      
+    </div>
+  </div>
+</section>

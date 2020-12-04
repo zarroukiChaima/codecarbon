@@ -1,0 +1,89 @@
+<section class="page-section">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Environnement</h2>
+      <h3 class="section-subheading text-muted"> The review of the literature, including other available information
+        (gray literature) showed that there are at least 346 genetic disorders for which cases have been identified in
+        the Tunisian population</h3>
+    </div>
+    <div class="row text-center">
+
+      <div class="col-md-6">
+              <!--  <img src="assets/img/statis/terre1.png"> -->
+
+              <div > 
+              <img  (mouseover)="img1=true;img2=false;img3=false;img4=false;img5=false;img6=false;img7=false;img8=false;" (mouseout)="img1=false" *ngIf="!img1" src="assets/img/statis/ta_011.gif"> 
+              <img  (mouseover)="img1=false" (mouseout)="img1=true" *ngIf="img1" src="assets/img/statis/ta_012.gif"> 
+             
+              <img  (mouseover)="img1=false;img2=true;img3=false;img4=false;img5=false;img6=false;img7=false;img8=false;" (mouseout)="img2=false" *ngIf="!img2" src="assets/img/statis/ta_021.gif" > 
+              <img  (mouseover)="img2=false" (mouseout)="img2=true" *ngIf="img2" src="assets/img/statis/ta_022.gif" > 
+              
+              <img (mouseover)="img1=false;img2=false;img3=true;img4=false;img5=false;img6=false;img7=false;img8=false;" (mouseout)="img3=false"  *ngIf="!img3" src="assets/img/statis/ta_031.gif"> 
+              <img (mouseover)="img3=false" (mouseout)="img3=true" *ngIf="img3" src="assets/img/statis/ta_032.gif"> 
+              
+            </div>
+             <div>
+
+             <img (mouseover)="img1=false;img2=false;img3=false;img4=true;img5=false;img6=false;img7=false;img8=false;" (mouseout)="img4=false"  *ngIf="!img4" src="assets/img/statis/ta_041.gif"> 
+              <img (mouseover)="img4=false" (mouseout)="img4=true" *ngIf="img4" src="assets/img/statis/ta_042.gif"> 
+              
+              <img (mouseover)="img1=false;img2=false;img3=false;img4=false;img5=true;img6=false;img7=false;img8=false;" (mouseout)="img5=false"  *ngIf="!img5" src="assets/img/statis/ta_051.gif"> 
+              <img (mouseover)="img5=false" (mouseout)="img5=true" *ngIf="img5" src="assets/img/statis/ta_052.gif"> 
+              
+              <img (mouseover)="img1=false;img2=false;img3=false;img4=false;img5=false;img6=true;img7=false;img8=false;"(mouseout)="img6=false"  *ngIf="!img6" src="assets/img/statis/ta_061.gif"> 
+              <img (mouseover)="img6=false" (mouseout)="img6=true" *ngIf="img6" src="assets/img/statis/ta_062.gif"> 
+              
+              </div>
+              <div>
+                <img src="assets/img/statis/ta_07.gif"> 
+                
+                
+                <img (mouseover)="img1=false;img2=false;img3=false;img4=false;img5=false;img6=false;img7=true;img8=false;" (mouseout)="img6=false"  *ngIf="!img7" src="assets/img/statis/ta_081.gif"> 
+                <img (mouseover)="img7=false" (mouseout)="img6=true" *ngIf="img7" src="assets/img/statis/ta_082.gif"> 
+                
+                <img (mouseover)="img1=false;img2=false;img3=false;img4=false;img5=false;img6=false;img7=false;img8=true;" (mouseout)="img6=false"  *ngIf="!img8" src="assets/img/statis/ta_091.gif"> 
+                <img (mouseover)="img8=false" (mouseout)="img6=true" *ngIf="img8" src="assets/img/statis/ta_092.gif"> 
+                
+
+              </div>
+
+       </div>
+      <div class="col-md-6">
+      <div class="row text-left">
+        <div class="col-md-3" ><img src="assets/img/statis/terre1.png"  style="height:100px;"></div>
+
+        <div class="col-md-6">
+          <label class="my-3" *ngIf="img1"> Civilisation-CO2</label>
+          <label class="my-3" *ngIf="img2"> Ça fond au Nord </label>
+          <label class="my-3" *ngIf="img3"> Les Alpes se réchauffent</label>
+          <label class="my-3" *ngIf="img4"> El Niño et La Niña plus fréquents  </label>
+          <label class="my-3" *ngIf="img5"> Abattage des arbres sans répit</label>
+          <label class="my-3" *ngIf="img6"> Le désert gagne du terrain</label>
+          <label class="my-3" *ngIf="img8"> Pêche et aquaculture en baisse</label>
+         
+        </div>
+      </div> 
+      <p  class="text-left" *ngIf="img1">Si les habitants d’Amérique du Nord émettent le plus de CO2, par personne, ils sont suivis de près par les autres régions où on mène une vie industrielle et motorisée: Europe, 
+        Japon, grandes villes d’Asie et d’Amérique du sud.Quand on décompte le COQuand on décompte le CO2,  émis par la Chine (désormais au premier rang des pays émetteurs de gaz à effet de serre) 
+        pourrait être mis sur le compte des nations qui consomment des produits industriels chinois.</p>
+      <p  class="text-left" *ngIf="img2"> il n’y a pas de terre ferme au Pôle nord, mais l’Océan arctique gelé forme une couche de glace flottante de quelques mètres d’épaisseur: la banquise. La surface de la banquise varie avec le froid: elle est plus petite en été qu’en hiver. Mais sa surface à fin septembre ne cesse de diminuer depuis qu’on l’observe attentivement (1979): elle s’est réduite de 10% tous les dix ans. Étant donné que l’eau de mer libre absorbe davantage d’énergie solaire que l’eau gelée (qui fait miroir), 
+        ’océan se réchauffe rapidement, accélérant ainsi la fonte du reste de la banquise.</p>
+      <p  class="text-left" *ngIf="img3">a Suisse est l’un des pays où le réchauffement est très marqué: +1,5 degrés au cours du dernier siècle, contre +0,6 degré en moyenne mondiale. Depuis 1850, pas moins de 250 glaciers ont disparu du pays. En plaine, la végétation souffre de la sécheresse,
+         par exemple en Valais et au Tessin où des prairies se transforment déjà en steppes </p>
+      <p  class="text-left" *ngIf="img4"> À l’Ouest du Pérou, le Pacifique présente des variations cycliques de température 
+        qui entraînent des modifications des courants marins, des vents et des précipitations. Quand la température s’élève,
+         le phénomène est appelé El Niño . Et il est appelé La Niña  lorsque la température baisse. El Niño entraîne notamment des sécheresses dans le Nordeste brésilien, le Nord de l’Amazonie, les hauts plateaux du Pérou et de la Bolivie, ainsi que sur la côte pacifique de l’Amérique centrale. La Niña produit par exemple de fortes précipitations en Colombie et des sécheresses dans le Sud du Brésil. Le réchauffement climatique rend ces variations plus fréquentes et plus marquées, 
+        accroissant la fréquence et la gravité des catastrophes naturelles.</p>
+      <p  class="text-left" *ngIf="img5">La déforestation est un facteur important du réchauffement climatique. Car la destruction des plantes et du sol d’une forêt libère non seulement du CO2  dans l’atmosphère, mais prive aussi notre planète d’une surface capable de capter le CO2  que nous émettons en excès. </p>
+      <p  class="text-left" *ngIf="img6"> Le réchauffement climatique engendre la faim dans certains coins du monde, 
+        parce que les pluies deviennent trop rares pour élever le bétail et cultiver. 
+        En Afrique, l’ONU s’attend à ce que les zones arides passent de 50 à 90 millions d’hectares d’ici 2080, 
+        accroissant les risques de famine dans ce continent.</p>
+      <p  class="text-left" *ngIf="img8"> Les changements climatiques se font aussi sentir sur la pêche et l’aquaculture: les prises et la production de poissons et de fruits de mer baissent sur de nombreuses côtes et dans de nombreux estuaires de la planète. Plusieurs facteurs sont en jeu: l’augmentation du CO2  atmosphérique augmente la température et l’acidité de l’eau, les courants marins (porteurs de planctons et de nutriments) se modifient, la fonte des glaciers et les nouveaux régimes de précipitations changent le débit et la qualité de l’eau des fleuves qui se jettent en mer. Sans oublier la pollution et la surpêche qui aggravent la situation.</p>
+      </div>      
+>>>>>>> 7456f8c233d7d883d157415f36e597b30e4bdb32
+    </div>
+    <p class="text-muted">*the remaining are of Y‐linked, mitochondrial, and unknown mode of transmission</p>
+
+  </div>
+</section>
